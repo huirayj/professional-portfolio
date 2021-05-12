@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/foggy-forest.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+progress {
+    padding: 10px;
+    color: green;
+    background-color: red;
+}
