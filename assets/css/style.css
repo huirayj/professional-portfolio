@@ -1,6 +1,12 @@
-* {
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.5);
+:root {
+    --deep-blue: #14161a;
+}
+
+body {
+    /* box-sizing: border-box; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: var(--deep-blue);
+    color: lightgrey;
 }
 
 .hero {
@@ -16,6 +22,8 @@ header {
     width: 100%;
     position: sticky;
     top: 0;
+    opacity: 0.8;
+    background-color: var(--deep-blue);
 }
 
 header h1 {
@@ -32,19 +40,96 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
+    padding: 10px;
+    font-size: 1.25em;
 }
 
 a {
     text-decoration: none;
+    color: grey;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 progress {
     padding: 10px;
     color: green;
     background-color: red;
+}
+
+footer {
+    color: white;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer ul li {
+    padding: 10px;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+section {
+    width: 100%;
+}
+
+.row-1 {
+    border: 2px solid black;
+    padding: 25px;
+    background-size: auto;
+    background-image: url(./assets/images/horiseon-seo-project.png);
+    background-repeat: no-repeat;
+}
+
+.row-2 {
+    display: flex;
+}
+
+.column {
+    display: inline-flex;
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    h2 {
+        text-align: center;
+    }
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        text-align: center;
+    }
+
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
