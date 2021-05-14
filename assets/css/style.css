@@ -1,22 +1,32 @@
 :root {
-    --deep-blue: #14161a;
+    --primary-color: #14161a;
+    --secondary-color: #D3D3D3;
+    --tertiary-color: #FFD700;
 }
 
 body {
-    /* box-sizing: border-box; */
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    background-color: var(--deep-blue);
-    color: lightgrey;
+    
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/foggy-forest.jpg");
-    background-size: cover;
-    background-position: center;
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: var(--tertiary-color);
+    filter: grayscale(60%);
+}
+
+p {
+    margin: 1%;
+}
+
+h2 {
+    margin: 2%;
 }
 
 header {
@@ -24,7 +34,7 @@ header {
     position: sticky;
     top: 0;
     opacity: 0.9;
-    background-color: var(--deep-blue);
+    background-color: var(--primary-color);
     z-index: 1;
 }
 
@@ -47,23 +57,83 @@ header nav ul li {
     font-size: 1.25em;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.hero {
+    width: 100%;
+    height: 800px;
+    margin-bottom: 2%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/foggy-forest.jpg");
+    background-size: cover;
+    background-position: center;
 }
-
-p {
-    margin: 1%;
-}
-
-h2 {
-    margin: 2%;
-}
-
+/* Creates a flex-container */
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+}
+/* Background-image for main project */
+.horiseon {
+    display: flex;
+    border: 1px solid white;
+    height: 600px;
+    background-size: 100%;
+    background-image: url(../images/horiseon-seo-project.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-basis: 100%;
+}
+/* Background-image for secondary projects */
+.timer {
+    display: flex;
+    height: 400px;
+    background-size: 120%;
+    background-image: url(../images/timer-app.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    flex: 1 0 33.33%;
+}
+/* Background-image for secondary projects */
+.twitter {
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    background-size: 110%;
+    background-image: url(../images/twitter-clone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 33.33%;
+}
+/* Background-image for secondary projects */
+.weather {
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    background-size: 120%;
+    background-image: url(../images/weather-app.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 33.33%;
+}
+
+.project-label {
+    display: block;
+    font-size: 1.25em;
+    background-color: slategray;
+    opacity: 0.8;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 5px 5px 5px;
+    margin: auto 0;
+}
+/* Larger display for main project */
+.flex-item-main {
+    flex: 100%;
+    max-width: 100%;
+}
+
+.flex-item {
+    flex: 33.33%;
+    max-width: 33.33%;
 }
 
 footer {
@@ -75,7 +145,7 @@ footer ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 footer ul li {
@@ -85,87 +155,7 @@ footer ul li {
 .contact {
     border: 1px solid white;
 }
-
-a:hover {
-    color: gold;
-    filter: grayscale(50%);
-}
-
-section {
-    width: 100%;
-}
-
-.horiseon {
-    display: flex;
-    border: 1px solid white;
-    height: 600px;
-    background-size: 100%;
-    background-image: url(../images/horiseon-seo-project.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    flex-basis: 100%;
-}
-
-.timer {
-    display: flex;
-    height: 400px;
-    background-size: 110%;
-    background-image: url(../images/timer-app.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 1px solid white;
-    flex: 1 0 33.33%;
-}
-
-.twitter {
-    border: 1px solid white;
-    display: flex;
-    height: 400px;
-    background-size: 100%;
-    background-image: url(../images/twitter-clone.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1 0 33.33%;
-}
-
-.weather {
-    border: 1px solid white;
-    display: flex;
-    height: 400px;
-    background-size: 100%;
-    background-image: url(../images/weather-app.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1 0 33.33%;
-}
-
-.row-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.header {
-    display: block;
-    font-size: 1.25em;
-    background-color: slategray;
-    opacity: 0.8;
-    width: fit-content;
-    height: fit-content;
-    padding: 0px 5px 5px 5px;
-}
-
-.column-special {
-    flex: 100%;
-    max-width: 100%;
-}
-
-.column {
-    flex: 33%;
-    max-width: 33%;
-}
-
+/* Responsive design for tablets */
 @media screen and (max-width: 980px) {
     header nav {
         float: none;
@@ -189,13 +179,17 @@ section {
         margin-top: 2%;
     }
 
-    .column {
+    .flex-item {
         flex: 100%;
         max-width: 50%;
     }
 }
-
+/* Responsive design for mobile devices */
 @media screen and (max-width: 768px) {
+    header {
+        font-size: 0.8em;
+    }
+
     header nav {
         float: none;
     }
@@ -217,9 +211,13 @@ section {
     h2 {
         margin-top: 3%;
     }
-
-    .column {
+/* Secondary projects take up full width */
+    .flex-item {
         flex: 100%;
         max-width: 100%;
+    }
+
+    .contact ul {
+        padding: 0px;
     }
 }
