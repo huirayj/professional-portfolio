@@ -24,7 +24,7 @@
     </header>
     <div class="hero">
     </div>
-    <main class="container">
+    <main>
         <section id="about-me">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt et ligula tincidunt consequat. Ut
@@ -40,24 +40,43 @@
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <div container>
-                <div class="row-1">
-                    <h3>Horiseon Project</h3>
-                    <span>HTML/CSS</span>
-                    <!-- <img src="./assets/images/horiseon-seo-project.png" alt="" srcset=""> -->
-                </div>
-                <div class="row-2">
-                    <div class="column">
-                        <img src="./assets/images/timer-app.jpg" alt="" srcset="">
-                        <img src="./assets/images/twitter-clone.jpg" alt="" srcset="">
-                        <img src="./assets/images/weather-app.jpg" alt="" srcset="">
+            <div class="container">
+                <a href="#" class="column-special">
+                    <div class="horiseon">
+                        <div class="header">
+                            <h3>Horiseon Project</h3>
+                            <span>HTML/CSS</span>
+                        </div>
                     </div>
-                </div>
+                </a>
+                <a href="#" class="column">
+                    <div class="timer">
+                        <div class="header">
+                            <h3>Timer App</h3>
+                            <span>Javascript</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="column">
+                    <div class="twitter">
+                        <div class="header">
+                            <h3>Twitter Clone</h3>
+                            <span>ReactJS</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="column">
+                    <div class="weather">
+                        <div class="header">
+                            <h3>Weather App</h3>
+                            <span>Ruby on Rails</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <div class="container">
                 <p>Vestibulum nec augue eleifend, fermentum libero et, interdum libero. Sed elementum sit amet quam et
                     fermentum. Maecenas nec rhoncus ex. Orci varius natoque penatibus et magnis dis parturient montes,
                     nascetur ridiculus mus. Maecenas et ultricies neque. Aliquam ac arcu a sem viverra fringilla. Etiam
@@ -67,10 +86,6 @@
                     cursus in. In fermentum nibh eu sapien aliquet mattis. Mauris elementum dui non dolor mollis
                     viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed diam felis, eleifend sit
                     amet efficitur et, vulputate quis lorem.</p>
-                <progress max="100" value="80"></progress>
-                <progress max="100" value="65"></progress>
-                <progress max="100" value="40"></progress>
-            </div>
         </section>
         <section id="resume">
             <h2>Resume</h2>
@@ -81,9 +96,9 @@
                 ipsum primis in faucibus. Fusce eu nisi venenatis, volutpat leo consectetur, rutrum libero.</p>
         </section>
     </main>
-    <footer id=contact>
+    <footer id="contact">
         <h2>Contact</h2>
-        <div>
+        <div class="contact">
             <ul>
                 <li>(123)-456-7890</li>
                 <li><a href="https://www.gmail.com" target="_blank">email@email.com</a></li>

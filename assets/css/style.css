@@ -7,6 +7,7 @@ body {
     /* background-color: rgba(0, 0, 0, 0.5); */
     background-color: var(--deep-blue);
     color: lightgrey;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .hero {
@@ -22,12 +23,14 @@ header {
     width: 100%;
     position: sticky;
     top: 0;
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: var(--deep-blue);
+    z-index: 1;
 }
 
 header h1 {
     display: inline-block;
+    margin-left: 1%;
 }
 
 header nav {
@@ -46,19 +49,21 @@ header nav ul li {
 
 a {
     text-decoration: none;
-    color: grey;
+    color: white;
+}
+
+p {
+    margin: 1%;
+}
+
+h2 {
+    margin: 2%;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-progress {
-    padding: 10px;
-    color: green;
-    background-color: red;
 }
 
 footer {
@@ -77,58 +82,143 @@ footer ul li {
     padding: 10px;
 }
 
+.contact {
+    border: 1px solid white;
+}
+
 a:hover {
-    color: goldenrod;
+    color: gold;
+    filter: grayscale(50%);
 }
 
 section {
     width: 100%;
 }
 
-.row-1 {
-    border: 2px solid black;
-    padding: 25px;
-    background-size: auto;
-    background-image: url(./assets/images/horiseon-seo-project.png);
+.horiseon {
+    display: flex;
+    border: 1px solid white;
+    height: 600px;
+    background-size: 100%;
+    background-image: url(../images/horiseon-seo-project.png);
+    background-position: center;
     background-repeat: no-repeat;
+    flex-basis: 100%;
+}
+
+.timer {
+    display: flex;
+    height: 400px;
+    background-size: 110%;
+    background-image: url(../images/timer-app.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    flex: 1 0 33.33%;
+}
+
+.twitter {
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    background-size: 100%;
+    background-image: url(../images/twitter-clone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 33.33%;
+}
+
+.weather {
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    background-size: 100%;
+    background-image: url(../images/weather-app.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 33.33%;
 }
 
 .row-2 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.header {
+    display: block;
+    font-size: 1.25em;
+    background-color: slategray;
+    opacity: 0.8;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 5px 5px 5px;
+}
+
+.column-special {
+    flex: 100%;
+    max-width: 100%;
 }
 
 .column {
-    display: inline-flex;
-    flex: 33.33%;
-    max-width: 33.33%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+    flex: 33%;
+    max-width: 33%;
 }
 
 @media screen and (max-width: 980px) {
-    h2 {
+    header nav {
+        float: none;
+    }
+
+    header nav ul {
+        display: inline-block;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    .hero {
+        height: 600px;
+    }
+
+    h1, h2 {
         text-align: center;
     }
 
+    h2 {
+        margin-top: 2%;
+    }
+
     .column {
-        flex: 50%;
+        flex: 100%;
         max-width: 50%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    h2 {
+    header nav {
+        float: none;
+    }
+
+    header nav ul {
+        display: inline-block;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    h1, h2 {
         text-align: center;
     }
 
+    h2 {
+        margin-top: 3%;
+    }
+
     .column {
-        display: flex;
-        flex-wrap: wrap;
         flex: 100%;
         max-width: 100%;
     }
