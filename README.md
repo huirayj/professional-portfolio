@@ -10,6 +10,8 @@ For this exercise, the user was tasked with creating a mock professional portfol
 - Hover pseudo-class
 
 # Links
+- https://huirayj.github.io/professional-portfolio/
+- https://github.com/huirayj/professional-portfolio
 
 # Resources
 - https://www.w3schools.com/tags/att_a_href.asp
@@ -19,5 +21,5 @@ For this exercise, the user was tasked with creating a mock professional portfol
 
 
 # Screenshot
-![Mobile version of website](../images/screenshot-mobile.png)
-![Desktop version of website](../images/screenshot-desktop.png)
+![Mobile version of website](https://github.com/huirayj/professional-portfolio/blob/main/assets/images/screenshot-mobile.png)
+![Desktop version of website](https://github.com/huirayj/professional-portfolio/blob/main/assets/images/screenshot-desktop.png)
