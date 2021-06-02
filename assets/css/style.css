@@ -4,11 +4,16 @@
     --tertiary-color: #FFD700;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
-    
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Roboto, sans-serif;
 }
 
 a {
@@ -31,20 +36,18 @@ h2 {
 
 header {
     width: 100%;
-    position: sticky;
     top: 0;
+    position: sticky;
     opacity: 0.9;
     background-color: var(--primary-color);
     z-index: 1;
 }
 
-header h1 {
-    display: inline-block;
-    margin-left: 1%;
-}
-
 header nav {
+    width: 100%;
     float: right;
+    background-color: var(--primary-color);
+    text-align: end;
 }
 
 header nav ul {
@@ -58,57 +61,82 @@ header nav ul li {
 }
 
 .hero {
+    display: flex;
     width: 100%;
     height: 800px;
-    margin-bottom: 2%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/foggy-forest.jpg");
     background-size: cover;
     background-position: center;
+    position: relative;
 }
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+.name {
+    color: var(--tertiary-color);
+}
+
 /* Creates a flex-container */
+
 .container {
     display: flex;
     flex-wrap: wrap;
 }
+
 /* Background-image for main project */
-.horiseon {
+
+.rmg {
     display: flex;
     border: 1px solid white;
     height: 600px;
     background-size: 100%;
-    background-image: url(../images/horiseon-seo-project.png);
+    background-image: url(../images/random-meal-generator.jpg);
     background-position: center;
     background-repeat: no-repeat;
     flex-basis: 100%;
 }
+
 /* Background-image for secondary projects */
-.timer {
-    display: flex;
-    height: 400px;
-    background-size: 120%;
-    background-image: url(../images/timer-app.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 1px solid white;
-    flex: 1 0 33.33%;
-}
-/* Background-image for secondary projects */
-.twitter {
+
+.quiz {
     border: 1px solid white;
     display: flex;
     height: 400px;
-    background-size: 110%;
-    background-image: url(../images/twitter-clone.jpg);
+    background-size: 100% 100%;
+    background-image: url(../images/js-speed-quiz.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1 0 33.33%;
 }
+
 /* Background-image for secondary projects */
+
+.day-scheduler {
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    background-size: 100% 100%;
+    background-image: url(../images/day-scheduler.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 33.33%;
+}
+
+/* Background-image for secondary projects */
+
 .weather {
     border: 1px solid white;
     display: flex;
     height: 400px;
-    background-size: 120%;
+    background-size: 100% 100%;
     background-image: url(../images/weather-app.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -116,16 +144,18 @@ header nav ul li {
 }
 
 .project-label {
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-size: 1.25em;
     background-color: slategray;
     opacity: 0.8;
-    width: fit-content;
-    height: fit-content;
     padding: 0px 5px 5px 5px;
-    margin: auto 0;
+    align-self: center;
+    height: fit-content;
 }
+
 /* Larger display for main project */
+
 .flex-item-main {
     flex: 100%;
     max-width: 100%;
@@ -155,69 +185,82 @@ footer ul li {
 .contact {
     border: 1px solid white;
 }
+
+.toggle-btn {
+    width: 35px;
+    display: none;
+    float: right;
+    margin: 1%;
+}
+
+.toggle-btn span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    float: left;
+    margin-bottom: 6px;
+}
+
 /* Responsive design for tablets */
+
 @media screen and (max-width: 980px) {
+    .toggle-btn {
+        display: block;
+    }
+    header {
+        height: 44px;
+    }
     header nav {
-        float: none;
+        display: none;
     }
-
-    header nav ul {
-        display: inline-block;
-        padding-left: 0px;
-        margin: 0px;
+    header nav.show {
+        display: block;
+        text-align: center;
     }
-
+    header nav.show ul li {
+        padding: 10px 0px;
+        width: 100%;
+    }
     .hero {
         height: 600px;
     }
-
-    h1, h2 {
-        text-align: center;
+    h1 {
+        font-size: 1.4em;
     }
-
     h2 {
+        text-align: center;
         margin-top: 2%;
     }
-
+    .horiseon {
+        height: 400px;
+    }
     .flex-item {
         flex: 100%;
         max-width: 50%;
     }
 }
+
 /* Responsive design for mobile devices */
+
 @media screen and (max-width: 768px) {
-    header {
-        font-size: 0.8em;
-    }
-
-    header nav {
-        float: none;
-    }
-
-    header nav ul {
-        display: inline-block;
-        padding-left: 0px;
-        margin: 0px;
-    }
-
     .hero {
         height: 400px;
     }
-
-    h1, h2 {
-        text-align: center;
+    h1 {
+        font-size: 1.2em;
     }
-
     h2 {
         margin-top: 3%;
     }
-/* Secondary projects take up full width */
+    /* Secondary projects take up full width */
     .flex-item {
         flex: 100%;
         max-width: 100%;
     }
-
-    .contact ul {
-        padding: 0px;
+    footer ul{
+        margin: 0 auto;
+        flex-wrap: wrap;
+        width: 40%;
     }
 }
