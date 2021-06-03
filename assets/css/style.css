@@ -97,7 +97,7 @@ h1 {
     display: flex;
     border: 1px solid white;
     height: 600px;
-    background-size: 100%;
+    background-size: cover;
     background-image: url(../images/random-meal-generator.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -152,6 +152,10 @@ h1 {
     padding: 0px 5px 5px 5px;
     align-self: center;
     height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 /* Larger display for main project */
@@ -159,11 +163,17 @@ h1 {
 .flex-item-main {
     flex: 100%;
     max-width: 100%;
+    position: relative;
 }
+
+/* a.flex-item-main {
+    width: 100vw;
+} */
 
 .flex-item {
     flex: 33.33%;
     max-width: 33.33%;
+    position: relative;
 }
 
 footer {
@@ -244,6 +254,10 @@ footer ul li {
 /* Responsive design for mobile devices */
 
 @media screen and (max-width: 768px) {
+    p {
+       text-align: justify; 
+       padding: 0 5px;
+    }
     .hero {
         height: 400px;
     }
