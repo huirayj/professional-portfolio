@@ -56,7 +56,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     font-size: 1.25em;
 }
 
@@ -85,27 +85,36 @@ h1 {
 }
 
 /* Creates a flex-container */
-
 .container {
     display: flex;
     flex-wrap: wrap;
 }
 
 /* Background-image for main project */
-
-.rmg {
+.ff {
     display: flex;
     border: 1px solid white;
     height: 600px;
     background-size: cover;
-    background-image: url(../images/random-meal-generator.jpg);
+    background-image: url(../images/forum-friends.png);
     background-position: center;
     background-repeat: no-repeat;
     flex-basis: 100%;
 }
 
 /* Background-image for secondary projects */
+.rmg {
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    background-size: 100% 100%;
+    background-image: url(../images/random-meal-generator.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 33.33%;
+}
 
+/* Background-image for secondary projects */
 .quiz {
     border: 1px solid white;
     display: flex;
@@ -118,26 +127,12 @@ h1 {
 }
 
 /* Background-image for secondary projects */
-
 .day-scheduler {
     border: 1px solid white;
     display: flex;
     height: 400px;
     background-size: 100% 100%;
     background-image: url(../images/day-scheduler.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1 0 33.33%;
-}
-
-/* Background-image for secondary projects */
-
-.weather {
-    border: 1px solid white;
-    display: flex;
-    height: 400px;
-    background-size: 100% 100%;
-    background-image: url(../images/weather-app.jpg);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1 0 33.33%;
@@ -159,16 +154,11 @@ h1 {
 }
 
 /* Larger display for main project */
-
 .flex-item-main {
     flex: 100%;
     max-width: 100%;
     position: relative;
 }
-
-/* a.flex-item-main {
-    width: 100vw;
-} */
 
 .flex-item {
     flex: 33.33%;
@@ -189,7 +179,13 @@ footer ul {
 }
 
 footer ul li {
-    padding: 10px;
+    display: flex;
+    align-self: center;
+    padding: 25px;
+}
+
+footer ul li a {
+    margin: 10px;
 }
 
 .contact {
@@ -200,11 +196,10 @@ footer ul li {
     width: 35px;
     display: none;
     float: right;
-    margin: 1%;
+    margin: 2%;
 }
 
 .toggle-btn span {
-    display: inline-block;
     width: 100%;
     height: 2px;
     background-color: var(--secondary-color);
@@ -213,7 +208,6 @@ footer ul li {
 }
 
 /* Responsive design for tablets */
-
 @media screen and (max-width: 980px) {
     .toggle-btn {
         display: block;
@@ -252,7 +246,6 @@ footer ul li {
 }
 
 /* Responsive design for mobile devices */
-
 @media screen and (max-width: 768px) {
     p {
        text-align: justify; 
@@ -276,5 +269,8 @@ footer ul li {
         margin: 0 auto;
         flex-wrap: wrap;
         width: 40%;
+    }
+    footer ul li{
+        padding: 10px
     }
 }

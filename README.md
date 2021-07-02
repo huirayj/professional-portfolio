@@ -1,4 +1,4 @@
-# My Professional Web Dev Portfolio (Updated)
+# My Professional Web Dev Portfolio (Updated #2)
 
 ## Overview
 For this exercise, the user was tasked with creating a mock professional portfolio using previously acquired HTML and CSS skills. An emphasis was placed on internal hyperlinks and responsive design. It was essential to use flexbox to ensure that the site work appropriately for smaller screen sizes.
@@ -8,10 +8,11 @@ For this exercise, the user was tasked with creating a mock professional portfol
 - Flexbox
 - Media queries
 - Hover pseudo-class
+- Font Awesome Icons
 
 ## Links
-- https://huirayj.github.io/professional-portfolio/
-- https://github.com/huirayj/professional-portfolio
+- [Deployed Link](https://huirayj.github.io/professional-portfolio/)
+- [Github Repository](https://github.com/huirayj/professional-portfolio)
 
 ## Resources
 - https://www.w3schools.com/tags/att_a_href.asp
@@ -19,11 +20,10 @@ For this exercise, the user was tasked with creating a mock professional portfol
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
 
-
 ## Screenshot
-### Mobile version of website
-![Mobile version of website](./assets/images/screenshots/screenshot-mobile.png)
-### Desktop version of website
-![Desktop version of website](./assets/images/screenshots/screenshot-desktop.png)
+### Updated Mobile version of website (07-01-2021)
+![Mobile version of website](./assets/images/screenshots/screenshot-mobile-update-07-01-2021.png)
+### Updated Desktop version of website (07-01-2021)
+![Desktop version of website](./assets/images/screenshots/screenshot-desktop-updated-07-01-2021.png)
 ### Updated Desktop version of website (06-01-2021)
 ![Updated Desktop version of website](./assets/images/screenshots/screenshot-desktop-updated-06-01-2021.png)
