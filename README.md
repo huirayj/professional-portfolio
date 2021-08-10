@@ -6,7 +6,6 @@ For this exercise, the user was tasked with creating a mock professional portfol
 
 ## Table of Content
 
-  - [Table of Content](#table-of-content)
   - [Features](#features)
   - [Installation](#installation)
   - [Usage](#usage)
